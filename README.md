@@ -11,8 +11,8 @@ The solution is to provide some incentive to both the marketers and to the email
 
 KM Token serves as the decentralized currency to compensate users and the KoinMail platform ensures that any emails delivered through it result in transactions on behalf of the recipient.
 
-Learn More: https://www.koinmail.com
+Learn More: https://www.blockagram.com
 
 ## Contact
 
-If you have any questions email info@koinmail.com
+If you have any questions email info@blockagram.com
