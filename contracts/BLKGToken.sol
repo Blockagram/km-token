@@ -13,8 +13,7 @@ contract BLKGToken is StandardToken {
     uint256 public constant decimals = 18;
     string public version = "1.0";
 
-    uint256 public constant INITIAL_SUPPLY = 1500 *  (10 ** uint256(decimals));
-
+    uint256 public constant INITIAL_SUPPLY = 1500000000 * (10 ** uint256(decimals));
 
     // constructor
     function BLKGToken() public {

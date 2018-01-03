@@ -1,7 +1,5 @@
 var Migrations = artifacts.require("./Migrations.sol");
-var BLKGToken = artifacts.require('./BLKGToken.sol');
 
 module.exports = function(deployer) {
-  deployer.deploy(Migrations);
-  deployer.deploy(BLKGToken);
+  deployer.deploy(Migrations, {gas: 621975, from: "0xc4f4d7ef579df808b8bd201345bbe30efa8a59c5"});
 };
