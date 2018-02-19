@@ -20,4 +20,24 @@ contract BLKGToken is StandardToken {
         totalSupply = INITIAL_SUPPLY;
         balances[msg.sender] = INITIAL_SUPPLY;
     }
+
+    // bulk transfer to lower transaction costs
+    function bulkTransfer(address[] _addresses, uint256[] _amounts) public returns (bool) {
+        uint256 total = 0;
+        require(_amounts.length == _addresses.length);
+        for (uint i = 0; i < _amounts.length; i++) {
+            total = total.add(_amounts[i]);
+            require(_addresses[i] != address(0));
+        }
+
+        require(total <= balances[msg.sender]);
+
+        // SafeMath.sub will throw if there is not enough balance.
+        balances[msg.sender] = balances[msg.sender].sub(total);
+        for (uint j = 0; j < _amounts.length; j++) {
+            balances[_addresses[j]] = balances[_addresses[j]].add(_amounts[j]);
+            Transfer(msg.sender, _addresses[j], _amounts[j]);
+        }
+        return true;
+    }
 }
