@@ -9,7 +9,7 @@ We are all overrun with marketing emails. They have become a drain on our time, 
 
 The solution is to provide some incentive to both the marketers and to the email recipients to account for the time it takes to open and read an email. A fee paid for by the marketers that is transferred to the wallets of those whose attention you wish to get. As a result marketers gain increased engagement on their emails, and recipients get valuable tokens.
 
-KM Token serves as the decentralized currency to compensate users and the KoinMail platform ensures that any emails delivered through it result in transactions on behalf of the recipient.
+BLKG Token serves as the decentralized currency to compensate users and the Blockagram platform ensures that any emails delivered through it result in transactions on behalf of the recipient.
 
 Learn More: https://www.blockagram.com
 
